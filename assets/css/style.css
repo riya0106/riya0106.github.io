@@ -140,7 +140,7 @@ nav ul li a:hover::after {
 
 /* --- 5. Sections --- */
 .section {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .section h2 {
@@ -148,7 +148,7 @@ nav ul li a:hover::after {
     font-family: var(--font-heading);
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     position: relative;
     color: var(--primary-color);
 }
