@@ -193,6 +193,46 @@ nav ul li a:hover::after {
     line-height: 1.9;
 }
 
+/* --- 5.2 Education Section --- */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.education-card {
+    background: var(--card-bg-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.09);
+}
+
+.education-card h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.education-card p {
+    color: var(--light-text-color);
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.education-card p strong {
+    color: var(--dark-text-color);
+}
+
 /* --- 5.5 Project Cards --- */
 .projects-grid {
     display: grid;
@@ -237,8 +277,29 @@ nav ul li a:hover::after {
 
 .project-card-content p {
     color: var(--light-text-color);
-    margin-bottom: 30px;
-    flex-grow: 1;
+    margin-bottom: 16px;
+    flex-grow: 0;
+}
+
+.project-card-content .impact {
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0 22px;
+}
+
+.project-tech span {
+    background: #e0b44f;
+    color: var(--primary-color);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
 }
 
 .project-buttons {
